@@ -27,7 +27,7 @@ public class PopulationReader implements CSVReader, Reader{
 		Map<Integer, Integer> zipCodePopulations = new HashMap<Integer, Integer>();
 
 		// check file permissions and open
-		File f = CheckReadability.checkReadability(filename);
+		File f = ErrorChecker.checkReadability(filename);
 
 		try {
 			// File file = new File(filename); // Creation of File Descriptor for input file
